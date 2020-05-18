@@ -1,7 +1,12 @@
+var BoxOpened = "";
+var ImgOpened = "";
+var Counter = 0;
+var ImgFound = 0;
 
-var source = "#game";
 
-var Imgsource = [
+var Source = "#cards";
+
+var ImgSource = [
     "assets/images/fiat500.jpg",
     "assets/images/beetle.jpg",
     "assets/images/ferrrari_f40.jpg",
@@ -38,4 +43,15 @@ function ShuffleImages() {
 		ImgThis = ImgThis.next();
 	}
 }
+
+$(function() {
+
+for (var y = 1; y < 3 ; y++) {
+	$.each(ImgSource, function(i, val) {
+		$(Source).append("<div id=card" + y + i + "><img src=" + val + " />");
+	});
+}
+	$(Source + " div").click(OpenCard);
+	ShuffleImages();
+});
 
