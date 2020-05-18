@@ -33,6 +33,13 @@ h2 {
 	border: 3px solid #ffff00;
 	cursor: pointer;
 	border-radius: 10px;
+    
+    background-image: url(../images/front.png);
+    background-size: cover;
+}
+
+#cards div:hover {
+    border: 3px solid #ff0077;
 }
 
 #game div img {
