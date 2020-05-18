@@ -23,3 +23,36 @@ h2 {
     z-index: 1;
 	margin: 10px 0 0;
 }
+
+#cards div {
+    float: left;
+	width: 150px;
+	height: 100px;
+	margin: 5px;
+	padding: 5px;
+	border: 3px solid #ffff00;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#game div img {
+    display: none;
+	border-radius: 10px;
+	z-index: 3;
+}
+
+#gamebuttons {
+    text-align: center;
+	margin: 30px;
+	display: block;
+}
+
+#gamebuttons .button{
+    text-transform: uppercase;
+	background: #ffff00;
+	margin: 5px;
+	cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color:violet;
+}
