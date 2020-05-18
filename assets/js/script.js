@@ -16,4 +16,11 @@ var Imgsource = [
 
 function RandomFunction(MaxValue, MinValue) {
 		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
-	}
+    }
+    
+function ShuffleImages() {
+    var ImgAll = $(Source).children();
+    var ImgThis = $(Source + " div:first-child");
+    var ImgArr = new Array();
+    
+}
