@@ -8,3 +8,13 @@ body {
     font-family: 'Indie Flower', cursive;
     color: #ffff00;
 }
+
+#game {
+    margin: 0px auto;
+    width: 900px; 
+}
+
+#cards {
+    z-index: 1;
+	margin: 10px 0 0;
+}
