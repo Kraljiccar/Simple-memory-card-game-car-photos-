@@ -8,6 +8,11 @@ body {
     font-family: 'Indie Flower', cursive;
     color: #ffff00;
 }
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 5rem;
+}
 
 #game {
     margin: 0px auto;
