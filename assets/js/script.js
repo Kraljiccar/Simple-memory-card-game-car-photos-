@@ -39,23 +39,10 @@ function ShuffleImages() {
 	for (var z = 0; z < ImgAll.length; z++) {
 	var RandomNumber = RandomFunction(0, ImgArr.length - 1);
 
-		$("#" + ImgThis.attr("id") + " img").attr("src", ImgAr[RandomNumber]);
+		$("#" + ImgThis.attr("id") + " img").attr("src", ImgArr[RandomNumber]);
 		ImgArr.splice(RandomNumber, 1);
 		ImgThis = ImgThis.next();
 	}
-}
-
-function ResetGame() {
-	ShuffleImages();
-	$(Source + " div img").hide();
-	$(Source + " div").css("visibility", "visible");
-	Counter = 0;
-	$("#success").remove();
-	$("#counter").html("" + Counter);
-	BoxOpened = "";
-	ImgOpened = "";
-	ImgFound = 0;
-	return false;
 }
 
 function OpenCard() {
@@ -99,6 +86,19 @@ function OpenCard() {
 			$("#counter").prepend('<span id="success">You Found All Pictues With </span>');
 		}
 	}
+}
+
+function ResetGame() {
+	ShuffleImages();
+	$(Source + " div img").hide();
+	$(Source + " div").css("visibility", "visible");
+	Counter = 0;
+	$("#success").remove();
+	$("#counter").html("" + Counter);
+	BoxOpened = "";
+	ImgOpened = "";
+	ImgFound = 0;
+	return false;
 }
 
 
