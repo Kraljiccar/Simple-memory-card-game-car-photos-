@@ -45,16 +45,18 @@ function ShuffleImages() {
 	}
 }
 
-$(function() {
-
-for (var y = 1; y < 3 ; y++) {
-	$.each(ImgSource, function(i, val) {
-		$(Source).append("<div id=card" + y + i + "><img src=" + val + " />");
-	});
-}
-	$(Source + " div").click(OpenCard);
+function ResetGame() {
 	ShuffleImages();
-});
+	$(Source + " div img").hide();
+	$(Source + " div").css("visibility", "visible");
+	Counter = 0;
+	$("#success").remove();
+	$("#counter").html("" + Counter);
+	BoxOpened = "";
+	ImgOpened = "";
+	ImgFound = 0;
+	return false;
+}
 
 function OpenCard() {
 	var id = $(this).attr("id");
@@ -98,6 +100,19 @@ function OpenCard() {
 		}
 	}
 }
+
+
+
+$(function() {
+
+for (var y = 1; y < 3 ; y++) {
+	$.each(ImgSource, function(i, val) {
+		$(Source).append("<div id=card" + y + i + "><img src=" + val + " />");
+	});
+}
+	$(Source + " div").click(OpenCard);
+	ShuffleImages();
+});
 
 
 
