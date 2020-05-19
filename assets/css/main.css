@@ -46,6 +46,7 @@ h2 {
     display: none;
 	border-radius: 10px;
 	z-index: 3;
+    background-size: cover;
 }
 
 #gamebuttons {

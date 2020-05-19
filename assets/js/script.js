@@ -9,14 +9,15 @@ var Source = "#cards";
 var ImgSource = [
     "assets/images/fiat500.jpg",
     "assets/images/beetle.jpg",
-    "assets/images/ferrrari_f40.jpg",
+    "assets/images/ferrari_f40.jpg",
     "assets/images/ford_gt.jpg",
-    "assets/images/GTO.jpg",
+    "assets/images/gto.jpg",
     "assets/images/mazdarx9.jpg",
     "assets/images/porsche_911.jpg",
     "assets/images/subaru_impreza.jpg",
     "assets/images/tesla.jpg",
-    "assets/images/odltimer.jpg",
+    "assets/images/oldtimer.jpg",
+    
 ];
 
 function RandomFunction(MaxValue, MinValue) {
@@ -68,16 +69,16 @@ function OpenCard() {
 			ImgOpened = $("#" + id + " img").attr("src");
 			setTimeout(function() {
 				$(Source + " div").bind("click", OpenCard)
-			}, 300);
+			}, 500);
 		} else {
 			CurrentOpened = $("#" + id + " img").attr("src");
 			if (ImgOpened != CurrentOpened) {
 				setTimeout(function() {
-					$("#" + id + " img").slideUp('fast');
-					$("#" + BoxOpened + " img").slideUp('fast');
+					$("#" + id + " img").slideUp('slow');
+					$("#" + BoxOpened + " img").slideUp('slow');
 					BoxOpened = "";
 					ImgOpened = "";
-				}, 400);
+				}, 1000);
 			} else {
 				$("#" + id + " img").parent().css("visibility", "hidden");
 				$("#" + BoxOpened + " img").parent().css("visibility", "hidden");
@@ -87,7 +88,7 @@ function OpenCard() {
 			}
 			setTimeout(function() {
 				$(Source + " div").bind("click", OpenCard)
-			}, 400);
+			}, 1000);
 		}
 		Counter++;
 		$("#counter").html("" + Counter);
