@@ -55,5 +55,48 @@ for (var y = 1; y < 3 ; y++) {
 	ShuffleImages();
 });
 
+function OpenCard() {
+	var id = $(this).attr("id");
+
+	if ($("#" + id + " img").is(":hidden")) {
+		$(Source + " div").unbind("click", OpenCard);
+	
+		$("#" + id + " img").slideDown('fast');
+
+		if (ImgOpened == "") {
+			BoxOpened = id;
+			ImgOpened = $("#" + id + " img").attr("src");
+			setTimeout(function() {
+				$(Source + " div").bind("click", OpenCard)
+			}, 300);
+		} else {
+			CurrentOpened = $("#" + id + " img").attr("src");
+			if (ImgOpened != CurrentOpened) {
+				setTimeout(function() {
+					$("#" + id + " img").slideUp('fast');
+					$("#" + BoxOpened + " img").slideUp('fast');
+					BoxOpened = "";
+					ImgOpened = "";
+				}, 400);
+			} else {
+				$("#" + id + " img").parent().css("visibility", "hidden");
+				$("#" + BoxOpened + " img").parent().css("visibility", "hidden");
+				ImgFound++;
+				BoxOpened = "";
+				ImgOpened = "";
+			}
+			setTimeout(function() {
+				$(Source + " div").bind("click", OpenCard)
+			}, 400);
+		}
+		Counter++;
+		$("#counter").html("" + Counter);
+
+		if (ImgFound == ImgSource.length) {
+			$("#counter").prepend('<span id="success">You Found All Pictues With </span>');
+		}
+	}
+}
+
 
 
