@@ -83,7 +83,7 @@ function OpenCard() {
 		$("#counter").html("" + Counter);
 
 		if (ImgFound == ImgSource.length) {
-			$("#counter").prepend('<span id="success">You Found All Pictues With </span>');
+			$("#counter").prepend('<span id="success">Bravoo!!! You Found All Pictues With </span>');
 		}
 	}
 }
