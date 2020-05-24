@@ -33,6 +33,6 @@ This site is hosted using GitHub pages, deployed directly from the master branch
  ### Media 
 Background photo was taken from [PixaBay](https://pixabay.com/), a stock image library, and car photos were taken from [Autouncle](https://autouncle.se), [Motor1](https://motor1.com) and [Petrolicius](https://petrolicius.com) 
 
-##Acknowledgements
+## Acknowledgements
 I received inspiration for this project by watching game examples on Youtube and CodePen.
  
