@@ -26,9 +26,9 @@ This game was tested across multiple browsers and on multiple mobile devices to 
 This site is hosted using GitHub pages, deployed directly from the master branch. The live site updates automatically each time there is a new push to the repository. You can `git clone` the code to run it locally on your machine.
 
 ## Credits
- -Code institute
- -Slack 
- -CodePen
+ Code institute
+ Slack 
+ CodePen
  
  ### Media 
 Background photo was taken from [PixaBay](https://pixabay.com/), a stock image library, and car photos were taken from [Autouncle](https://autouncle.se), [Motor1](https://motor1.com) and [Petrolicius](https://petrolicius.com) 
