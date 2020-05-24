@@ -1,10 +1,10 @@
 # Simple-memory-card-game-car-photos-
 
-This is simple memory card game that presents my current knowladge in coding. This game cover my knowledge in HTML5, CSS3, Javascript and JQuery.
+This is simple memory card game that presents my current knowladge in coding. This game covers my knowledge in HTML5, CSS3, Javascript and JQuery.
 
 ## UX
 
-My goal in design and coding this game was to make it as simple as possible.
+My goal in design and coding this game was to make it as simple as possible, with as less coding ass possible.
 
 ## Features
 
