@@ -14,10 +14,10 @@ Game is designed to click and match 10 same cards, which are transparent on fron
 A live demo can be found [here](https://github.com/Kraljiccar/Simple-memory-card-game-car-photos-).
 
 ## Technologies Used
-1.HTML
-2.Css
-3.Javascript
-4.Jquery  
+1. HTML
+2. Css
+3. Javascript
+4. Jquery  
 
 ## Testing
 This game was tested across multiple browsers and on multiple mobile devices to ensure compatibility and responsiveness.
