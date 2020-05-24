@@ -10,10 +10,10 @@ My goal in design and coding this game was to make it as simple as possible, wit
 
 Game is designed to click and match 10 same cards, which are transparent on front side and have car photos on the back side. It have 2 basic buttons, one that shows how many times you have clicked to match them, and one for game reset.
 
-##Demo
+## Demo
 A live demo can be found [here](https://github.com/Kraljiccar/Simple-memory-card-game-car-photos-).
 
-##Technologies Used
+## Technologies Used
 1.HTML
 2.Css
 3.Javascript
